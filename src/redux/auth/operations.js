@@ -2,11 +2,11 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import { toast } from 'react-toastify';
 
 import axios from 'axios';
-const { REACT_APP_BASE_URL } = process.env;
+// const { REACT_APP_BASE_URL } = process.env;
 // axios.defaults.baseURL = 'https://petly-brs3.onrender.com/api';
 // axios.defaults.baseURL = 'http://localhost:3001/api';
-// axios.defaults.baseURL = 'https://pets-support-back.onrender.com/api';
-axios.defaults.baseURL = REACT_APP_BASE_URL;
+axios.defaults.baseURL = 'https://pets-support-back.onrender.com/api';
+// axios.defaults.baseURL = REACT_APP_BASE_URL;
 const setAuthHeader = token => {
   axios.defaults.headers.common.Authorization = `Bearer ${token}`;
 };
